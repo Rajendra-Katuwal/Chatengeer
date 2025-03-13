@@ -1,0 +1,110 @@
+# ========================
+# FLUTTER
+# ========================
+
+# Flutter & Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.metadata
+.packages
+
+# Flutter build artifacts
+build/
+android/app/debug/
+android/app/profile/
+android/app/release/
+
+# iOS/macOS build files
+ios/Flutter/.last_build_id
+ios/Pods
+ios/.symlinks/
+ios/build/
+macos/Flutter/ephemeral/
+macos/build/
+
+# Flutter dependencies
+pubspec.lock
+Generated.xcconfig
+xcuserdata/
+
+# Flutter test coverage
+coverage/
+
+# Web build artifacts
+web/manifest.json
+web/favicon.png
+web/assets/
+
+# Linux/Windows build files
+linux/build/
+windows/build/
+
+# ========================
+# DJANGO
+# ========================
+
+# Python bytecode
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual environment
+venv/
+env/
+*.venv/
+
+# Django settings & secrets
+.env
+*.sqlite3
+db.sqlite3
+config/settings/local.py
+config/settings/secrets.json
+
+# Django migrations (optional)
+**/migrations/*.pyc
+**/migrations/*.py
+
+# Static & media files
+staticfiles/
+media/
+static/
+*.log
+
+# Celery & cache
+celerybeat-schedule
+*.pid
+
+# Django test coverage
+htmlcov/
+.coverage
+coverage.xml
+
+# ========================
+# GENERAL
+# ========================
+
+# IDE-specific files
+.vscode/
+.idea/
+*.iml
+
+# Logs & temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+*.lock
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Fastlane (if used)
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+
+# User-specific files
+scripts/
+*.sh
