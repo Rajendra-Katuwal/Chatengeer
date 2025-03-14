@@ -28,11 +28,22 @@ INSTALLED_APPS = [
 
     # Third-party apps
     'rest_framework',
+    'channels',
 
     # Custom apps
     'users',
     'chat',
 ]
+
+
+ASGI_APPLICATION = "config.asgi.application"  # ASGI instead of WSGI
+
+# Configure Django Channels to use Redis for WebSocket handling
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels.layers.InMemoryChannelLayer",  # Use Redis in production
+    },
+}
 
 
 MIDDLEWARE = [
@@ -63,7 +74,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'config.wsgi.application'
+# WSGI_APPLICATION = 'config.wsgi.application'
 
 
 # Database
